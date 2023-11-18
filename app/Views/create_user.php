@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,11 @@
     <title><?= $title ?></title>
     <link rel="stylesheet" href="<?=base_url("assets/css/style.css")?>">
 </head>
-<body> -->
-<div class="navbar">
-        <a href="list_kelas">List Kelas</a>
-        <a href="list_user">List User</a>
-    </div>
+<body> 
 <?= $this->extend('layouts/app') ?>
 <?= $this->section('content') ?>
 <form action="<?=base_url('/user/store') ?>" method="POST" enctype="multipart/form-data">
+
     <table>
         <tr>
             <td>Nama</td>
@@ -51,6 +48,6 @@
         </tr>
     </form>
     <?= $this->endSection() ?>
-<!-- 
+    
 </body>
-</html> -->
+</html>

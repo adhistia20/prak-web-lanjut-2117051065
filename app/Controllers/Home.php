@@ -8,7 +8,7 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
-    public function profile($nama = "Adhistia", $kelas = "D", $npm = "2117051065")
+    public function profile()
     {
         $data = [
             'nama' => $nama,
@@ -17,4 +17,5 @@ class Home extends BaseController
         ];
         return view('profile', $data);
     }
+
 }

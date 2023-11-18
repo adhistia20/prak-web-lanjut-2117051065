@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="<?=base_url("assets/css/style.css")?>">
 </head>
 <body>
-<div class="navbar">
-    <a href="<?= base_url('home') ?>">Home</a>
-    <a href="<?= base_url('list_user') ?>">User</a>
-    <a href="<?= base_url('list_kelas') ?>">Kelas</a>
-</div>
 <?= $this->extend('layouts/app') ?>
 <?= $this->section('content') ?>
 <form action="<?= base_url('user/' . $user['id']) ?>" method="POST" enctype="multipart/form-data">
