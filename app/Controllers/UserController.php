@@ -25,7 +25,7 @@ class UserController extends BaseController
         return view('list_users', $data);
     }
 
-    public function profile($nama = "", $kelas = "", $npm = "")
+    public function profile()
     {
         $data = [
             'nama' => $nama,
@@ -98,6 +98,7 @@ class UserController extends BaseController
         $data = [
              'title' => 'Profile',
              'user'  => $user,
+            
             ];
             return view ('profile', $data);
     }

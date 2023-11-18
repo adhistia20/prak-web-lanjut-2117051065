@@ -3,10 +3,7 @@
 <div class="table-container">
  <table class="content-table">
 <body>
-<div class="navbar">
-        <a href="list_kelas">List Kelas</a>
-        <a href="list_user">List User</a>
-    </div>
+
     <link rel="stylesheet" href="<?=base_url("assets/css/style.css")?>">
     <thead>
     <a href="<?= base_url('/profile/create') ?>">Tambah Data</a>
